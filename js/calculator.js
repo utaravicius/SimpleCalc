@@ -33,15 +33,14 @@ function updateTable() {
 }
 
 function handleClick(id) {
-
-    if(equalsWasPressed){
+    if (equalsWasPressed) {
         currentField = "";
         equalsWasPressed = false;
 
         if (id != 'division' && id != 'multiplication' && id != 'subtract' && id != 'plus') {
-            if (id == 'dot') {
+            if (id == 'dot' && currentField.indexOf(".") == -1) {
                 currentField += ".";
-            } else {
+            } else if (!isNaN(id.valueOf())) {
                 currentField += id.valueOf();
                 updateResultField(currentField);
             }
@@ -52,9 +51,9 @@ function handleClick(id) {
     } else {
 
         if (id != 'division' && id != 'multiplication' && id != 'subtract' && id != 'plus') {
-            if (id == 'dot') {
+            if (id == 'dot' && currentField.indexOf(".") == -1) {
                 currentField += ".";
-            } else {
+            } else if (!isNaN(id.valueOf())) {
                 currentField += id.valueOf();
                 updateResultField(currentField);
             }

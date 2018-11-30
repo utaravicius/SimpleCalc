@@ -16,6 +16,7 @@ html {
 
 #firstTable {
     margin-bottom: 50px;
+    border-collapse: collapse;
 }
 
 .resultField {
@@ -35,7 +36,7 @@ html {
 
 #plus {
     height: 100%;
-    line-height: 104px;
+    line-height: 102px;
 }
 
 .action {
@@ -50,7 +51,7 @@ html {
     background-color: #ff8e4d;
 }
 
-input:hover{
+input:hover {
     background-color: orange;
     cursor: pointer;
 }
@@ -64,7 +65,7 @@ input:hover{
     text-align: center;
 }
 
-#secondTable th{
+#secondTable th {
     background-color: #2896e1;
     border: 1px solid black;
     border-collapse: collapse;
