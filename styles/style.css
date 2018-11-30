@@ -14,6 +14,10 @@ html {
     background-color: beige;
 }
 
+#firstTable {
+    margin-bottom: 50px;
+}
+
 .resultField {
     background-color: black;
     height: 50px;
@@ -54,7 +58,10 @@ input:hover{
 #secondTable {
     border: 1px solid black;
     border-collapse: collapse;
-    margin-top: 50px;
+    margin: auto;
+    width: 500px;
+    background-color: beige;
+    text-align: center;
 }
 
 #secondTable th{
@@ -64,7 +71,11 @@ input:hover{
 }
 
 #secondTable td {
-    background-color: #2896e1;
+    width: 25%;
     border: 1px solid black;
     border-collapse: collapse;
+}
+
+#secondTable tr {
+    line-height: 30px;
 }
