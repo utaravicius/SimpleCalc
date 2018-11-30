@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+
+<table class="container">
+    <tr>
+        <td colspan="4" class="resultField">
+            <div id="result" > </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="1"><input type="submit" class="numbers" id="7" value="7" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="8" value="8" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="9" value="9" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="action" id="division" value="/" onclick="handleClick(this.id)"></td>
+    </tr>
+    <tr>
+        <td colspan="1"><input type="submit" class="numbers" id="4" value="4" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="5" value="5" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="6" value="6" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="action" id="multiplication" value="X" onclick="handleClick(this.id)"></td>
+    </tr>
+    <tr>
+        <td colspan="1"><input type="submit" class="numbers" id="1" value="1" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="2" value="2" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="numbers" id="3" value="3" onclick="handleClick(this.id)"></td>
+        <td colspan="1"><input type="submit" class="action" id="subtract" value="-" onclick="handleClick(this.id)"></td>
+    </tr>
+    <tr>
+        <td colspan=" 2"><input type="submit" class="numbers" id="0" value="0" onclick="handleClick(this.id)"></td>
+        <td colspan=" 1"><input type="submit" class="numbers" id="dot" value="." onclick="handleClick(this.id)"></td>
+        <td colspan=" 1" rowspan="2"><input type="submit" class="action" id="plus" value="+" onclick="handleClick(this.id)"></td>
+    </tr>
+    <tr>
+        <td colspan=" 3"><input type="submit" class="action" id="equals" value="=" onclick="calculate()"></td>
+    </tr>
+</table>
+
+<table class="container" id="secondTable">
+    <tr>
+        <td>
+            <th>A</th>
+        </td>
+        <td>
+            <th>Veiksmas</th>
+        </td>
+        <td>
+            <th>B</th>
+        </td>
+        <td>
+            <th>=</th>
+        </td>
+    </tr>
+
+</table>
+</body>
+<script type=" text/javascript" language="JavaScript" src="js/calculator.js"></script>
+
+</html>
