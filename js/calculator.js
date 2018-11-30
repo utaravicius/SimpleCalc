@@ -17,7 +17,7 @@ function updateTable() {
         "<th>A</th>" +
         "<th>Veiksmas</th>" +
         "<th>B</th>" +
-        "<th>Rezultatas <input type='submit' id='up' value='up' onclick='sortResultUp()'>" +
+        "<th>Rezultatas<input type='submit' id='up' value='up' onclick='sortResultUp()'>" +
         "<input type='submit' id='down' value='down' onclick='sortResultDown()'></th>" +
         "</tr>";
 
